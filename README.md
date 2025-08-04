@@ -48,6 +48,7 @@ This is a dApp project that showcases how to integrate Alchemy’s APIs to retri
 ```
 
 3. Configure .env variables
+
    Copy .env.example variables to .env using the following command:
 
    ```bash
@@ -57,6 +58,7 @@ This is a dApp project that showcases how to integrate Alchemy’s APIs to retri
    ```
 
    Then update your .env variables for each folder
+
    Scorecard_NFT:
 
    This includes your RPC_URL and your Deployer's Private key
@@ -101,13 +103,17 @@ This is a dApp project that showcases how to integrate Alchemy’s APIs to retri
    ```
 
 6. Deploy/Use Already Deployed Testnet Contract
+
    You can choose to deply a new NFT contract:
+
    ```bash
    cd Scorecard_NFT
    npx hardhat compile
    npx hardhat run ./scripts/deploy.ts
    ```
+
    Or Use the Already Deployed Contract:
+   
    ```bash
    CONTRACT_ADDRESS=0x2B20F646CEdB8D40f2a37358A3b712ced3D5B294
    ```
